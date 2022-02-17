@@ -1,0 +1,19 @@
+﻿<Window x:Class="TuzzaMAratona.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TuzzaMAratona"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="626" Width="800">
+    <StackPanel Margin="0,0,0,147">
+        <Button x:Name="BtnLeggiDaFile" Content="Leggi da file" Click="BtnLeggiDaFile_Click"/>
+        <DataGrid x:Name="DgElencomaratone" Height="300" />
+        <Label Content="Inserisci il nome:"/>
+        <TextBox x:Name="TxtTitolo" />
+        <Label Content="Inserisci la citta:"/>
+        <TextBox x:Name="TxtCitta" />
+        <Label x:Name="LblAtleta" />
+        <Button x:Name="BtnCercaAtleta" Content="Cerca Atleta" Click="BtnCercaAtleta_Click"/>
+    </StackPanel>
+</Window>
